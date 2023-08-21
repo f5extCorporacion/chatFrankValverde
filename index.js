@@ -6,7 +6,7 @@ var bodyParser = require('body-parser')
 
 const http = require('http');
 dotenv.config();
-const port =  process.env.PORT;
+const port =  process.env.PORT || 3000;
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
