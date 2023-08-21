@@ -30,7 +30,7 @@ app.route("/")
    res.redirect("/chat");
 })
 
-//vista y union chat y usuario
+//vista y union chat y usuario buenos datos
 app.route("/chat")
 .get( (req,res,next)=>{res.render('formulario',)})
 .post((req,res,next)=>{console.log('hol')})
